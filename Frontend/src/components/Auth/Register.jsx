@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form"
 import styles from "./Auth.module.css"
+import axios from 'axios'
 
 function Register() {
     const {
@@ -9,8 +10,20 @@ function Register() {
         formState: { errors }
     } = useForm();
 
-    const submitCall = (data) => {
+    const submitCall = async (data) => {
         console.log(data);
+        {
+            try {
+                //i have used
+                const url = "http://localhost:6969/user/auth/register"
+                const response = await axios.post(url, data)
+                if (response.status == 201) {
+                    alert('Registration Successful.')
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        }
 
     }
     return (
