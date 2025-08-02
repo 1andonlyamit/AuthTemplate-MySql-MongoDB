@@ -1,2 +1,16 @@
 # AuthTemplate-Mysql-Mongodb-
-Hii in this mini project i have created a template for login and signup for both Mysql and mongodb which will be helpful for you when you are having less time so you more focus on main features and not wasting time on creating login sign-up
+Hii, Amit here 
+In this mini project:
+
+I have created Login and Signup functionality Template.
+You will get both Mysql & MongoDB connection.
+I added JWT authorization too.
+Sooner i will be adding email verification.
+
+It will be very useful for places like hackathons or somewhere 
+where you are havin less time to develop so you focus more on 
+Main functionalities instead of wasting time on Login and Signup.
+
+I also added an excalidraw file so you can also create a project 
+or template like this, as i have covered full development Journey
+in that.
