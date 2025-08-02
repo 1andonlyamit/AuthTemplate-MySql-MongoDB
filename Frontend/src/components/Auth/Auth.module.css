@@ -1,0 +1,116 @@
+.errorMsg {
+    color: #e53935;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    letter-spacing: 0.1px;
+}
+
+.authContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.authForm {
+    background: #fff;
+    padding: 40px 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(76, 68, 182, 0.15);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.authTitle {
+    text-align: center;
+    color: #5a4fcf;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.label {
+    font-size: 1rem;
+    color: #5a4fcf;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.input {
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f7f8fa;
+    color: #23235b;
+    /* darker text color */
+    transition: border 0.2s, background 0.2s, color 0.2s;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #a0a3bd;
+    /* subtle placeholder color */
+    opacity: 1;
+}
+
+.input:focus {
+    border: 1.5px solid #764ba2;
+    background: #eef1fb;
+    color: #181846;
+}
+
+.submitButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.submitButton button {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px rgba(118, 75, 162, 0.08);
+}
+
+.submitButton button:hover {
+    background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-2px) scale(1.02);
+}
+
+.toggleText {
+    color: #7c7c7c;
+    font-size: 0.95rem;
+    margin-top: 6px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .authForm {
+        padding: 24px 8px;
+        max-width: 95vw;
+    }
+}
